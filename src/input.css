@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-raliway;
+  }
+  header,
+  main {
+    @apply w-11/12 md:w-4/5 lg:max-w-[1170px] mx-auto;
+  }
+  h1,
+  h2 {
+    @apply text-drak-color font-extrabold text-2xl lg:text-4xl;
+  }
+  h3 {
+    @apply text-drak-color font-bold text-xl;
+  }
+  p,
+  a {
+    @apply text-drak-color text-[14px]  md:text-base lg:font-medium;
+  }
+}
+
+@layer components {
+  .background {
+    background: linear-gradient(90deg, #ffffff33, #00000033),
+      url("images/banner.png");
+  }
+  main section {
+    @apply my-20;
+  }
+}

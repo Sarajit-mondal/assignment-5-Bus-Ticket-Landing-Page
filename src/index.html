@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- nav lists -->
+      <nav class="py-5 flex justify-between items-center">
+        <!-- logo -->
+        <div>
+          <h1>P-Ticket</h1>
+        </div>
+        <!-- nav list -->
+        <ul class="md:flex gap-14 hidden">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+        <!-- bus and icon -->
+        <button
+          class="btn btn-active bg-[#1DD1001A] border-1 border-[#1DD10066] text-primary-color px-6"
+        >
+          Bus <img src="images/bus-icon.png" alt="" />
+        </button>
+      </nav>
+      <!-- nav lists ends -->
+      <!-- banner section start -->
+      <section class="relative">
+        <div
+          class="background h-[70vh] bg-bottom bg-cover rounded-3xl flex items-center justify-center text-center"
+        >
+          <div class="max-w-[760px] space-y-5">
+            <h1 class="text-light-color">
+              End-to-End Travel with <br />
+              <span class="text-primary-color">P Paribahan</span>
+            </h1>
+            <p class="text-light-color">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button
+              class="btn btn-active bg-primary-color b text-drak-color px-6 font-extrabold hover:text-primary-color"
+            >
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+        <!-- banner cards -->
+        <div
+          class="mb-10 flex flex-wrap gap-5 justify-center md:absolute md:-bottom-24 left-20 [&>div]:bg-light-color"
+        >
+          <!-- cardOne -->
+          <div
+            class="p-6 rounded-2xl border-b-2 border-primary-color flex gap-x-4"
+          >
+            <img src="images/people.png" alt="" />
+            <div class="space-y-2">
+              <h1>500k+</h1>
+              <p class="font-bold text-neutral-600">Registered users</p>
+            </div>
+          </div>
+          <!-- cardTwo-->
+          <div
+            class="p-6 rounded-2xl border-b-2 border-primary-color flex gap-x-4"
+          >
+            <img src="images/ticket-cupon.png" alt="" />
+            <div class="space-y-2">
+              <h1>1.7 lacks</h1>
+              <p class="font-bold text-neutral-600">Tickets sold</p>
+            </div>
+          </div>
+          <!-- cardThere -->
+          <div
+            class="p-6 rounded-2xl border-b-2 border-primary-color flex gap-x-4"
+          >
+            <img src="images/stopbus.png" alt="" />
+            <div class="space-y-2">
+              <h1>80k+</h1>
+              <p class="font-bold text-neutral-600">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner section ends -->
+    </header>
+
+    <!-- main section start here -->
+    <main>
+      <!-- best offer section -->
+      <section class="mt-32">
+        <h1>Best offers for you</h1>
+        <div
+          class="flex flex-col md:flex-row gap-10 items-center justify-center mt-10 [&_h2]:text-[25px] [&_p]:text-[12px]"
+        >
+          <!-- one ticket -->
+          <div class="relative">
+            <div class="relative">
+              <img src="images/Rectangle 8.png" alt="" class="relative" />
+              <img
+                src="images/cupon-devider-1.png"
+                alt=""
+                class="absolute top-0 right-[35%]"
+              />
+            </div>
+            <!-- text -->
+            <div class="flex justify-between [&>div]:absolute">
+              <div class="left-10 top-2/4 -translate-y-2/4">
+                <h2>15% OFF</h2>
+                <p>On your next purchase</p>
+                <p class="text-neutral-600">use by january 2024</p>
+              </div>
+              <div class="right-10 top-2/4 -translate-y-2/4">
+                <h2>NEW15</h2>
+                <p class="text-neutral-600">Coupon Code</p>
+              </div>
+            </div>
+          </div>
+          <!-- two ticket -->
+          <div class="relative">
+            <div class="relative">
+              <img src="images/Rectangle 8.png" alt="" class="relative" />
+              <img
+                src="images/cupon-devider-1.png"
+                alt=""
+                class="absolute top-0 right-[37%]"
+              />
+            </div>
+            <!-- text -->
+            <div class="flex justify-between [&>div]:absolute">
+              <div class="left-10 top-2/4 -translate-y-2/4">
+                <h2>20% OFF</h2>
+                <p>On your next purchase</p>
+                <p class="text-neutral-600">use by january 2024</p>
+              </div>
+              <div class="right-8 top-2/4 -translate-y-2/4 text-center">
+                <h2>Couple 20</h2>
+                <p class="text-neutral-600">Coupon Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main section end here -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
