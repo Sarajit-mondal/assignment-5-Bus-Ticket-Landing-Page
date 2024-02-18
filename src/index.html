@@ -167,9 +167,9 @@
         <!-- ticket price -->
         <div class="my-16 flex flex-col md:flex-row items-center gap-10">
           <!-- left  -->
-          <div class="space-y-6 flex-3/4">
+          <div class="space-y-6 basis-3/4">
             <!-- greenline -->
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col md:flex-row justify-between items-center">
               <div class="flex gap-x-3 items-center">
                 <img src="images/bus-logo.png" alt="" class="h-10" />
                 <span>
@@ -189,7 +189,7 @@
               </div>
             </div>
             <!-- destination and time -->
-            <div class="flex justify-between [&>div]:space-y-5 p-5">
+            <div class="flex flex-col md:flex-row justify-between [&>div]:space-y-5 p-5">
               <div class="[&>p]:text-neutral-600">
                 <p>Route</p>
                 <p>Departure Time</p>
@@ -201,7 +201,7 @@
             </div>
             <!-- next destination and time -->
             <div
-              class="flex gap-4 justify-center items-center [&>div]:min-w-[200px]"
+              class="flex flex-col md:flex-row gap-4 justify-center items-center [&>div]:min-w-[220px]"
             >
               <div
                 class="bg-[#0307121A] px-4 py-2 font-bold text-[12px] flex rounded-lg gap-2 justify-center text-nowrap"
@@ -234,10 +234,239 @@
           </div>
         </div>
       </section>
-
       <!-- Greenline Paribahan start here -->
+
+      <!-- Ticket select section start here -->
+      <!-- Ticket select section start here -->
+      <section>
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+          <!-- set selection -->
+          <div class="basis-3/5">
+            <h3>Select Your Seat</h3>
+            <!-- top -->
+            <div class="flex justify-between items-baseline mt-5">
+              <span class="flex items-center gap-x-3">
+                <img src="images/seat-gray.png" alt="" />
+                <p>Available</p>
+              </span>
+              <div>
+                <span class="flex items-center gap-x-3">
+                  <img src="images/seat-green.png" alt="" />
+                  <p class="font-bold text-primary-color">Selected</p>
+                </span>
+                <span>
+                  <img src="images/Group 56.png" alt="" class="mt-7" />
+                </span>
+              </div>
+            </div>
+
+            <!-- Seat Start here -->
+            <div
+              class="mt-5 [&_span]:min-h-12 [&_span]:min-w-28 [&_span]:text-neutral-500 [&_span]:font-bold [&_span]:rounded-md [&_span]:bg-primary-color [&_span]:flex [&_span]:justify-center [&_span]:items-center space-y-4 [&>div]:flex-wrap [&>div]:justify-center"
+            >
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>A</p>
+                <span class="seat">A1</span>
+                <span class="seat">A2</span>
+                <span class="seat">A3</span>
+                <span class="seat">A4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>B</p>
+                <span class="seat">B1</span>
+                <span class="seat">B2</span>
+                <span class="seat">B3</span>
+                <span class="seat">B4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>C</p>
+                <span class="seat">C1</span>
+                <span class="seat">C2</span>
+                <span class="seat">C3</span>
+                <span class="seat">C4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>D</p>
+                <span class="seat">D1</span>
+                <span class="seat">D2</span>
+                <span class="seat">D3</span>
+                <span class="seat">D4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>E</p>
+                <span class="seat">E1</span>
+                <span class="seat">E2</span>
+                <span class="seat">E3</span>
+                <span class="seat">E4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>F</p>
+                <span class="seat">F1</span>
+                <span class="seat">F2</span>
+                <span class="seat">F3</span>
+                <span class="seat">F4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>G</p>
+                <span class="seat">G1</span>
+                <span class="seat">G2</span>
+                <span class="seat">G3</span>
+                <span class="seat">G4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>H</p>
+                <span class="seat">H1</span>
+                <span class="seat">H2</span>
+                <span class="seat">H3</span>
+                <span class="seat">H4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>I</p>
+                <span class="seat">I1</span>
+                <span class="seat">I2</span>
+                <span class="seat">I3</span>
+                <span class="seat">I4</span>
+              </div>
+              <div class="flex gap-4 items-center [&>span]:cursor-pointer">
+                <p>J</p>
+                <span class="seat">J1</span>
+                <span class="seat">J2</span>
+                <span class="seat">J3</span>
+                <span class="seat">J4</span>
+              </div>
+            </div>
+            <!-- Seat end here -->
+          </div>
+          <!-- set money and discount calculation-->
+          <div
+            class="basis-2/5 pl-5 border-l-2 space-y-5 border-dotted border-neutral-500"
+          >
+            <h3>Select Your Seat</h3>
+            <!-- seat -->
+            <div
+              id="set-container"
+              class="mt-10 [&>div]:flex [&>div]:items-center [&>div]:justify-around space-y-5"
+            >
+              <div class="[&>*]:font-bold">
+                <p>
+                  Seat
+                  <span
+                    id="set-Seleted"
+                    class="px-2 bg-primary-color rounded-full text-light-color font-bo"
+                    >0</span
+                  >
+                </p>
+                <p>Class</p>
+                <p>Price</p>
+              </div>
+              <div>
+                <p>C2</p>
+                <p>Economoy</p>
+                <p>550</p>
+              </div>
+            </div>
+            <!-- total price and discount-->
+            <div class=" space-y-5">
+              <div class="flex font-bold justify-between">
+                <h5>Total Price</h5>
+                <h5>BDT <span id="total-price" class="text-2xl">11</span></h5>
+              </div>
+              <!-- discount input -->
+              <div
+                class="w-3/4 mx-auto flex items-center justify-between px-5 rounded-2xl mt-5"
+              >
+                <input
+                  type="text"
+                  placeholder="Have any copupon?"
+                  class="placeholder:text-sm outline-none border-none flex-grow-1"
+                />
+                <button class="btn px-6 bg-primary-color text-light-color py-2">
+                  Apply
+                </button>
+              </div>
+              <!-- Grand total price -->
+            <div class="font-bold">
+              <div class="flex justify-between">
+                <h5>Grand Total</h5>
+                <h5>BDT <span id="grand-total" class="text-2xl">11</span></h5>
+              </div>
+            </div>
+             
+            <!-- users ditails -->
+            <form action="">
+              <label for=""class="font-bold">Passenger Name* <br>
+              <input
+                  type="text" id="nameinput"
+                  placeholder="Enter your name"
+                  class="placeholder:text-sm p-10 outline-none border-none flex-grow-1"
+                />
+                <br>
+              </label>
+              <label for=""class="font-bold">Phone Number* <br>
+              <input
+                  type="number" id="number"
+                  placeholder="Enter your phone number"
+                  class="placeholder:text-sm p-10 outline-none border-none flex-grow-1"
+                />
+                <br>
+              </label>
+              <label for=""class="font-bold">Email ID* <br>
+              <input
+                  type="email" id="nameinput"
+                  placeholder="Enter your email id"
+                  class="placeholder:text-sm p-10 outline-none border-none flex-grow-1"
+                />
+              </label>
+              <input type="button" value="Next" class="btn btn-primary bg-primary-color w-full">
+            </form>
+
+            <!-- tream and condition -->
+            <div class="flex justify-around">
+              <p class="underline">Terms and Conditions</p>
+              <p class="underline">Cancellation Policy</p>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ticket select section end here -->
+      <!-- Ticket select section end here -->
     </main>
     <!-- main section end here -->
+
+
+    <footer class="w-full mt-20 py-10 bg-drak-color [&_*]:text-light-color">
+      <section class="w-11/12 md:w-4/5 lg:max-w-[1170px] mx-auto">
+        <!-- top -->
+        <div class="flex flex-col text-center md:flex-row md:text-left justify-between">
+          <div class="space-y-3">
+            <h4 class="text-2xl font-extrabold">P-Ticket</h4>
+            <p>P-Ticket is a digital platform to make <br> your daily commuting better.</p>
+          </div>
+          <div class="space-y-4 mx-auto md:mx-0">
+            <p>Download app</p>
+            <div class="flex items-center gap-3">
+              <img src="images/playstore.png" alt="">
+              <div>
+                <p>get IT ON</p>
+                <h2 class="text-2xl">Google Play</h2>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- bottom -->
+        <div class="flex flex-col md:flex-row justify-between py-3 mt-8 items-center border-t-2 border-dotted border-neutral-500">
+          <p>@all rights reserved, P-Ticket services limited.2024</p>
+          <div class="flex  space-x-5">
+            <p>Terms & condition</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+
+          </div>
+        </div>
+      </section>
+    </footer>
 
     <script src="script.js"></script>
   </body>
