@@ -22,7 +22,7 @@
         </ul>
         <!-- bus and icon -->
         <button
-          class="btn btn-active bg-[#1DD1001A] border-1 border-[#1DD10066] text-primary-color px-6"
+          class="rounded-lg flex gap-x-2 font-bold bg-[#1DD1001A] border-1 border-[#1DD10066] text-primary-color px-4 py-2"
         >
           Bus <img src="images/bus-icon.png" alt="" />
         </button>
@@ -31,10 +31,10 @@
       <!-- banner section start -->
       <section class="relative">
         <div
-          class="background h-[70vh] bg-bottom bg-cover rounded-3xl flex items-center justify-center text-center"
+          class="background h-[75vh] bg-bottom bg-cover rounded-3xl flex items-center justify-center text-center"
         >
-          <div class="max-w-[760px] space-y-5">
-            <h1 class="text-light-color">
+          <div class="max-w-[760px] space-y-3">
+            <h1 class="text-light-color leading-normal">
               End-to-End Travel with <br />
               <span class="text-primary-color">P Paribahan</span>
             </h1>
@@ -42,11 +42,11 @@
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
-            <button
+            <div
               class="btn btn-active bg-primary-color b text-drak-color px-6 font-extrabold hover:text-primary-color"
             >
               Buy Tickets
-            </button>
+            </div>
           </div>
         </div>
         <!-- banner cards -->
@@ -93,7 +93,7 @@
     <main>
       <!-- best offer section -->
       <section class="mt-32">
-        <h1 class="text-center">Best offers for you</h1>
+        <h1 class="text-center my-5">Best offers for you</h1>
         <div
           class="flex flex-col md:flex-row gap-10 items-center justify-center mt-10 [&_h2]:text-[25px] [&_p]:text-[12px]"
         >
@@ -113,7 +113,7 @@
                 <p>On your next purchase</p>
                 <p class="text-neutral-600">use by january 2024</p>
               </div>
-              <div>
+              <div class="text-center">
                 <h2>NEW15</h2>
                 <p class="text-neutral-600">Coupon Code</p>
               </div>
@@ -135,14 +135,107 @@
                 <p>On your next purchase</p>
                 <p class="text-neutral-600">use by january 2024</p>
               </div>
-              <div>
+              <div class="text-center">
                 <h2>Couple 20</h2>
                 <p class="text-neutral-600">Coupon Code</p>
               </div>
             </div>
           </div>
         </div>
+        <button
+          class="mt-12 flex gap-2 mx-auto btn btn-active bg-[#1DD1001A] border-1 border-[#1DD10066] text-primary-color px-6"
+        >
+          See All Offers
+        </button>
       </section>
+
+      <!-- Greenline Paribahan start here -->
+      <section
+        class="border-t-2 border-primary-color rounded-full w-11/12 mx-auto"
+      >
+        <!-- title -->
+        <div class="text-center space-y-3 mt-20">
+          <h1>P.H Paribahan</h1>
+          <p>
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated <br />
+            testing features allow for a streamlined .
+          </p>
+        </div>
+      </section>
+      <section>
+        <!-- ticket price -->
+        <div class="my-16 flex flex-col md:flex-row items-center gap-10">
+          <!-- left  -->
+          <div class="space-y-6 flex-3/4">
+            <!-- greenline -->
+            <div class="flex justify-between items-center">
+              <div class="flex gap-x-3 items-center">
+                <img src="images/bus-logo.png" alt="" class="h-10" />
+                <span>
+                  <h3>Greenline Paribahan</h3>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </span>
+              </div>
+              <div
+                class="bg-[#1DD10026] px-4 py-2 font-bold text-primary-color flex rounded-lg gap-2 items-center"
+              >
+                <img
+                  src="images/seat-green-filled.png"
+                  alt=""
+                  class="w-7 h-7"
+                />
+                <span id="set" class="text-xl">40</span>Seats left
+              </div>
+            </div>
+            <!-- destination and time -->
+            <div class="flex justify-between [&>div]:space-y-5 p-5">
+              <div class="[&>p]:text-neutral-600">
+                <p>Route</p>
+                <p>Departure Time</p>
+              </div>
+              <div class="text-right">
+                <p>Dhaka-Sylhet</p>
+                <p>9:00</p>
+              </div>
+            </div>
+            <!-- next destination and time -->
+            <div
+              class="flex gap-4 justify-center items-center [&>div]:min-w-[200px]"
+            >
+              <div
+                class="bg-[#0307121A] px-4 py-2 font-bold text-[12px] flex rounded-lg gap-2 justify-center text-nowrap"
+              >
+                Boarding Point - Laxmipur
+              </div>
+              <!-- two -->
+              <div
+                class="bg-[#0307121A] px-4 py-2 font-bold text-[12px] flex rounded-lg gap-2 justify-cente text-nowrap"
+              >
+                Dropping Point - Bogura
+              </div>
+              <!-- three -->
+              <div
+                class="bg-[#0307121A] px-4 py-2 font-bold text-[12px] flex rounded-lg gap-2 justify-center"
+              >
+                Est. Time - 11 Hour
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div
+            class="flex-1/4 h-full p-12 flex justify-center border-l-2 border-dotted border-primary-color"
+          >
+            <div class="text-center">
+              <img src="images/fare.png" alt="" class="mx-auto" />
+              <h3 class="text-nowrap">550 Taka</h3>
+              <p>Per Seat</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Greenline Paribahan start here -->
     </main>
     <!-- main section end here -->
 

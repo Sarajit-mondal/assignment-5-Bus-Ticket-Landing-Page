@@ -647,7 +647,7 @@ body{
 }
 
 header,
-  main{
+  main section{
   margin-left: auto;
   margin-right: auto;
   width: 91.666667%;
@@ -655,14 +655,14 @@ header,
 
 @media (min-width: 768px){
   header,
-  main{
+  main section{
     width: 80%;
   }
 }
 
 @media (min-width: 1024px){
   header,
-  main{
+  main section{
     max-width: 1170px;
   }
 }
@@ -685,8 +685,8 @@ h1,
 }
 
 h3{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(3 7 18 / var(--tw-text-opacity));
@@ -1255,57 +1255,27 @@ main section{
   position: relative;
 }
 
-.left-10{
-  left: 2.5rem;
-}
-
 .left-20{
   left: 5rem;
-}
-
-.right-10{
-  right: 2.5rem;
-}
-
-.right-8{
-  right: 2rem;
 }
 
 .right-\[35\%\]{
   right: 35%;
 }
 
-.right-\[37\%\]{
-  right: 37%;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.top-2\/4{
-  top: 50%;
-}
-
-.right-3\/4{
-  right: 75%;
-}
-
-.right-1\/4{
-  right: 25%;
-}
-
-.right-\[30\%\]{
-  right: 30%;
-}
-
-.right-\[20\%\]{
-  right: 20%;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .mb-10{
@@ -1316,8 +1286,16 @@ main section{
   margin-top: 2.5rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-32{
   margin-top: 8rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .flex{
@@ -1332,69 +1310,68 @@ main section{
   height: 4rem;
 }
 
-.h-\[70vh\]{
-  height: 70vh;
-}
-
-.h-\[140px\]{
-  height: 140px;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-auto{
-  height: auto;
-}
-
-.h-\[220px\]{
-  height: 220px;
-}
-
-.h-\[20px\]{
-  height: 20px;
+.h-7{
+  height: 1.75rem;
 }
 
 .h-\[200px\]{
   height: 200px;
 }
 
-.min-h-\[220px\]{
-  min-height: 220px;
+.h-\[75vh\]{
+  height: 75vh;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.h-10{
+  height: 2.5rem;
 }
 
 .min-h-\[200px\]{
   min-height: 200px;
 }
 
+.w-11\/12{
+  width: 91.666667%;
+}
+
 .w-16{
   width: 4rem;
 }
 
-.w-\[235px\]{
-  width: 235px;
+.w-7{
+  width: 1.75rem;
 }
 
 .w-full{
   width: 100%;
 }
 
-.w-auto{
-  width: auto;
+.w-5{
+  width: 1.25rem;
 }
 
-.min-w-\[570px\]{
-  min-width: 570px;
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[220px\]{
+  width: 220px;
 }
 
 .max-w-\[760px\]{
   max-width: 760px;
 }
 
-.-translate-y-2\/4{
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-col{
@@ -1417,6 +1394,10 @@ main section{
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
 .gap-10{
   gap: 2.5rem;
 }
@@ -1425,8 +1406,30 @@ main section{
   gap: 3.5rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-x-2{
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-3{
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 .gap-x-4{
@@ -1440,10 +1443,32 @@ main section{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.text-nowrap{
+  text-wrap: nowrap;
 }
 
 .rounded-2xl{
@@ -1454,12 +1479,32 @@ main section{
   border-radius: 1.5rem;
 }
 
-.border-4{
-  border-width: 4px;
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-t-2{
+  border-top-width: 2px;
+}
+
+.border-l-2{
+  border-left-width: 2px;
+}
+
+.border-dotted{
+  border-style: dotted;
 }
 
 .border-\[\#1DD10066\]{
@@ -1475,14 +1520,30 @@ main section{
   background-color: #1DD1001A;
 }
 
-.bg-primary-color{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 209 0 / var(--tw-bg-opacity));
+.bg-\[\#1DD10026\]{
+  background-color: #1DD10026;
 }
 
 .bg-\[\#FFBF0F\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 191 15 / var(--tw-bg-opacity));
+}
+
+.bg-primary-color{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 209 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#03071226\]{
+  background-color: #03071226;
+}
+
+.bg-\[\#0307120D\]{
+  background-color: #0307120D;
+}
+
+.bg-\[\#0307121A\]{
+  background-color: #0307121A;
 }
 
 .bg-cover{
@@ -1501,14 +1562,12 @@ main section{
   padding: 2.5rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.p-20{
+  padding: 5rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.p-12{
+  padding: 3rem;
 }
 
 .px-10{
@@ -1516,13 +1575,32 @@ main section{
   padding-right: 2.5rem;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .text-2xl{
@@ -1535,12 +1613,28 @@ main section{
   line-height: 1.75rem;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-extrabold{
   font-weight: 800;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.leading-normal{
+  line-height: 1.5;
 }
 
 .text-drak-color{
@@ -1586,13 +1680,42 @@ main section{
   }
 }
 
-.\[\&\>div\]\:absolute>div{
-  position: absolute;
+.\[\&\>div\]\:min-w-\[230px\]>div{
+  min-width: 230px;
+}
+
+.\[\&\>div\]\:min-w-\[200px\]>div{
+  min-width: 200px;
+}
+
+.\[\&\>div\]\:space-y-4>div > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.\[\&\>div\]\:space-y-5>div > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .\[\&\>div\]\:bg-light-color>div{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.\[\&\>div\]\:text-center>div{
+  text-align: center;
+}
+
+.\[\&\>div\]\:text-right>div{
+  text-align: right;
+}
+
+.\[\&\>p\]\:text-neutral-600>p{
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 
 .\[\&_h2\]\:text-\[25px\] h2{
