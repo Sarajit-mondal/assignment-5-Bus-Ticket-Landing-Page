@@ -20,7 +20,7 @@
   }
   p,
   a {
-    @apply text-drak-color text-[14px]  md:text-base lg:font-medium;
+    @apply text-drak-color text-[14px]  md:text-sm lg:font-medium;
   }
 }
 

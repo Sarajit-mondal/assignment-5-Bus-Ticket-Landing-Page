@@ -702,8 +702,8 @@ p,
 @media (min-width: 768px){
   p,
   a{
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1255,56 +1255,12 @@ main section{
   position: relative;
 }
 
-.left-20{
-  left: 5rem;
-}
-
-.right-2\/4{
-  right: 50%;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.right-\[40\%\]{
-  right: 40%;
-}
-
-.right-\[50\%\]{
-  right: 50%;
-}
-
-.right-3\/4{
-  right: 75%;
-}
-
-.right-1\/4{
-  right: 25%;
-}
-
-.right-\[35\%\]{
-  right: 35%;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.top-2\/4{
-  top: 50%;
-}
-
-.left-8{
-  left: 2rem;
-}
-
 .left-10{
   left: 2.5rem;
+}
+
+.left-20{
+  left: 5rem;
 }
 
 .right-10{
@@ -1315,12 +1271,41 @@ main section{
   right: 2rem;
 }
 
-.right-\[30\%\]{
-  right: 30%;
+.right-\[35\%\]{
+  right: 35%;
 }
 
 .right-\[37\%\]{
   right: 37%;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-2\/4{
+  top: 50%;
+}
+
+.right-3\/4{
+  right: 75%;
+}
+
+.right-1\/4{
+  right: 25%;
+}
+
+.right-\[30\%\]{
+  right: 30%;
+}
+
+.right-\[20\%\]{
+  right: 20%;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-10{
@@ -1329,10 +1314,6 @@ main section{
 
 .mt-10{
   margin-top: 2.5rem;
-}
-
-.mt-36{
-  margin-top: 9rem;
 }
 
 .mt-32{
@@ -1347,17 +1328,68 @@ main section{
   display: none;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .h-\[70vh\]{
   height: 70vh;
 }
 
-.max-w-\[760px\]{
-  max-width: 760px;
+.h-\[140px\]{
+  height: 140px;
 }
 
-.-translate-x-2\/4{
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.h-full{
+  height: 100%;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.h-\[220px\]{
+  height: 220px;
+}
+
+.h-\[20px\]{
+  height: 20px;
+}
+
+.h-\[200px\]{
+  height: 200px;
+}
+
+.min-h-\[220px\]{
+  min-height: 220px;
+}
+
+.min-h-\[200px\]{
+  min-height: 200px;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.w-\[235px\]{
+  width: 235px;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.min-w-\[570px\]{
+  min-width: 570px;
+}
+
+.max-w-\[760px\]{
+  max-width: 760px;
 }
 
 .-translate-y-2\/4{
@@ -1385,16 +1417,16 @@ main section{
   justify-content: space-between;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-14{
   gap: 3.5rem;
 }
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .gap-x-4{
@@ -1422,6 +1454,10 @@ main section{
   border-radius: 1.5rem;
 }
 
+.border-4{
+  border-width: 4px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -1444,6 +1480,11 @@ main section{
   background-color: rgb(29 209 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFBF0F\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 191 15 / var(--tw-bg-opacity));
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -1452,16 +1493,12 @@ main section{
   background-position: bottom;
 }
 
-.p-6{
-  padding: 1.5rem;
-}
-
 .p-5{
   padding: 1.25rem;
 }
 
-.p-8{
-  padding: 2rem;
+.p-10{
+  padding: 2.5rem;
 }
 
 .px-6{
@@ -1474,8 +1511,28 @@ main section{
   padding-bottom: 1.25rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1504,11 +1561,6 @@ main section{
 .text-primary-color{
   --tw-text-opacity: 1;
   color: rgb(29 209 0 / var(--tw-text-opacity));
-}
-
-.text-neutral-500{
-  --tw-text-opacity: 1;
-  color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary-color:hover{
@@ -1541,33 +1593,6 @@ main section{
 .\[\&\>div\]\:bg-light-color>div{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.\[\&\>div_h1\]\:text-\[20px\]>div h1{
-  font-size: 20px;
-}
-
-.\[\&_h1\]\:text-xl h1{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.\[\&_h1\]\:text-\[20px\] h1{
-  font-size: 20px;
-}
-
-.\[\&_h2\]\:text-\[20px\] h2{
-  font-size: 20px;
-}
-
-.\[\&_h2\]\:text-xl h2{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.\[\&_h2\]\:text-sm h2{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .\[\&_h2\]\:text-\[25px\] h2{
