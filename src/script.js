@@ -92,12 +92,12 @@ getElementId("next-btn").addEventListener("click", () => {
 
 // continue btn
 getElementId("continue-btn").addEventListener("click", () => {
-  getElementId("success-card").classList.toggle("-translate-x-[250%]");
+  getElementId("success-card").classList.toggle("-translate-x-[300%]");
   console.log("skdfdsaf");
 });
 // successMessage card
 function successMessage() {
-  getElementId("success-card").classList.toggle("-translate-x-[250%]");
+  getElementId("success-card").classList.toggle("-translate-x-[300%]");
 }
 
 // discount btn click
