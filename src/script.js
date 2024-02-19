@@ -18,10 +18,13 @@ function seatTicketSelect(seat) {
       selectedCount++;
       leftSeat--;
       selectedSeat++;
+      // setinnerText
       setInnerText("leftseat", leftSeat);
       setInnerText("seletedSeat", selectedSeat);
       setInnerText("total-price", 550 * selectedCount);
       setInnerText("grand-total", 550 * selectedCount);
+
+      // seleted seat lists
       createSeatList(seat.innerText);
       // discount btn enable
       if (selectedCount === 4) {
@@ -33,7 +36,7 @@ function seatTicketSelect(seat) {
         getElementId("next-btn").disabled = false;
       }
     } else {
-      alert("You can't buy only 4 tickets!");
+      alert("You can buy only 4 tickets! Not More");
     }
   }
 }
@@ -42,6 +45,8 @@ getElementId("number").addEventListener("keyup", (event) => {
   const number = getElementId("number").value;
   if (selectedCount >= 1 && number !== "") {
     getElementId("next-btn").disabled = false;
+  } else {
+    getElementId("next-btn").disabled = true;
   }
 });
 // next btn click
@@ -78,7 +83,7 @@ getElementId("discount-btn").addEventListener("click", () => {
     getElementId("discount-input").classList.add("hidden");
   } else {
     couponCode.value = "";
-    alert("Invalid Coupon Code! Please input write code");
+    alert("Invalid Coupon Code! Please input Right Coupon Code");
   }
 });
 
