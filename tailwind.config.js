@@ -9,6 +9,7 @@ module.exports = {
     },
     fontFamily: {
       raliway: ["Raleway", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
     extend: {},
   },

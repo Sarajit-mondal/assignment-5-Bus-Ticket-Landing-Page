@@ -21,13 +21,68 @@ function seatTicketSelect(seat) {
       setInnerText("leftseat", leftSeat);
       setInnerText("seletedSeat", selectedSeat);
       setInnerText("total-price", 550 * selectedCount);
-
+      setInnerText("grand-total", 550 * selectedCount);
       createSeatList(seat.innerText);
+      // discount btn enable
+      if (selectedCount === 4) {
+        getElementId("discount-btn").disabled = false;
+      }
+      // next btn enable
+      const number = getElementId("number").value;
+      if (selectedCount >= 1 && number !== "") {
+        getElementId("next-btn").disabled = false;
+      }
     } else {
-      alert("You can buy only 4 tickets!");
+      alert("You can't buy only 4 tickets!");
     }
   }
 }
+getElementId("number").addEventListener("keyup", (event) => {
+  // next btn enable
+  const number = getElementId("number").value;
+  if (selectedCount >= 1 && number !== "") {
+    getElementId("next-btn").disabled = false;
+  }
+});
+// next btn click
+getElementId("next-btn").addEventListener("click", () => {
+  successMessage();
+  getElementId("nameinput").value = "";
+  getElementId("number").value = "";
+  getElementId("email-input").value = "";
+  getElementId("next-btn").disabled = true;
+});
+
+// continue btn
+getElementId("continue-btn").addEventListener("click", () => {
+  getElementId("success-card").classList.toggle("-translate-x-[250%]");
+  console.log("skdfdsaf");
+});
+// successMessage card
+function successMessage() {
+  getElementId("success-card").classList.toggle("-translate-x-[250%]");
+}
+
+// discount btn click
+getElementId("discount-btn").addEventListener("click", () => {
+  const couponCode = getElementId("coupon-code");
+  const code = couponCode.value.trim().toUpperCase();
+  const grandTotal = parseInt(getElementId("grand-total").innerText);
+
+  // discount condition
+  if (code === "NEW15") {
+    setInnerText("grand-total", grandTotal - grandTotal * 0.15);
+    getElementId("discount-input").classList.add("hidden");
+  } else if (code === "COUPLE 20") {
+    setInnerText("grand-total", grandTotal - grandTotal * 0.2);
+    getElementId("discount-input").classList.add("hidden");
+  } else {
+    couponCode.value = "";
+    alert("Invalid Coupon Code! Please input write code");
+  }
+});
+
+// work with nextBtn
 
 //create seat list
 function createSeatList(seatPosition) {
