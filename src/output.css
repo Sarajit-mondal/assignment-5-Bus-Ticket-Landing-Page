@@ -2158,6 +2158,11 @@ main section{
   background-color: rgb(29 209 0 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+}
+
 .bg-cover{
   background-size: cover;
 }
