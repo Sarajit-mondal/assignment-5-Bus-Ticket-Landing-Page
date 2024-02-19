@@ -24,7 +24,7 @@ function seatTicketSelect(seat) {
       setInnerText("total-price", 550 * selectedCount);
       setInnerText("grand-total", 550 * selectedCount);
 
-      // seleted seat lists
+      // create seleted  lists
       createSeatList(seat.innerText);
       // discount btn enable
       if (selectedCount === 4) {
@@ -39,6 +39,38 @@ function seatTicketSelect(seat) {
       alert("You can buy only 4 tickets! Not More");
     }
   }
+  // decriment and removeseleted
+  // decriment and removeseleted
+  // decriment and removeseleted
+  else if (seat.classList.contains("bg-primary-color") === true) {
+    if (selectedCount >= 1) {
+      seat.classList.add("bg-neutral-300");
+      seat.classList.remove("bg-primary-color", "text-light-color");
+      selectedCount--;
+      leftSeat++;
+      selectedSeat--;
+      // setinnerText
+      setInnerText("leftseat", leftSeat);
+      setInnerText("seletedSeat", selectedSeat);
+      setInnerText("total-price", 550 * selectedCount);
+      setInnerText("grand-total", 550 * selectedCount);
+
+      removeSeatList(seat.innerText);
+
+      // discount btn enable
+      if (selectedCount === 3) {
+        getElementId("discount-btn").disabled = true;
+      }
+      // next btn enable
+      const number = getElementId("number").value;
+      if (selectedCount === 0 && number !== "") {
+        getElementId("next-btn").disabled = true;
+      }
+    }
+  }
+  // decriment and removeseleted
+  // decriment and removeseleted
+  // decriment and removeseleted
 }
 getElementId("number").addEventListener("keyup", (event) => {
   // next btn enable
@@ -97,6 +129,17 @@ function createSeatList(seatPosition) {
                 <p>Economoy</p>
                 <p>550</p>`;
   setList.appendChild(div);
+}
+// remove seat lists
+function removeSeatList(seat) {
+  const seatLists = document
+    .querySelectorAll("#set-container div")
+    .forEach((selecteSeat) => {
+      const seatText = selecteSeat.firstChild.innerText;
+      if (seatText === seat) {
+        selecteSeat.remove();
+      }
+    });
 }
 
 // getElementId function
