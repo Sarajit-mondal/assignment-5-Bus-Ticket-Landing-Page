@@ -96,6 +96,7 @@ getElementId("continue-btn").addEventListener("click", () => {
   console.log("skdfdsaf");
 });
 // successMessage card
+// successMessage card
 function successMessage() {
   getElementId("success-card").classList.toggle("-translate-x-[250%]");
 }
